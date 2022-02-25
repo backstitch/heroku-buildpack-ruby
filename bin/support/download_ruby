@@ -36,6 +36,7 @@ mkdir -p "$RUBY_BOOTSTRAP_DIR"
 
 curl_retry_on_18 --fail --silent --location -o "$RUBY_BOOTSTRAP_DIR/ruby.tgz" "$heroku_buildpack_ruby_url" || {
 cat<<EOF
+  Test to see if we are bing used
   Failed to download a Ruby executable for bootstrapping!
 
   This is most likely a temporary internal error. If the problem
