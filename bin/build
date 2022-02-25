@@ -8,8 +8,8 @@ APP_DIR=$(pwd)
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILDPACK_DIR=$(dirname $BIN_DIR)
 
-# legacy buildpack uses $STACK 
-export STACK=$CNB_STACK_ID
+# legacy buildpack uses $STACK
+export STACK="heroku-18"
 
 source "$BIN_DIR/support/bash_functions.sh"
 heroku_buildpack_ruby_install_ruby "$BIN_DIR" "$BUILDPACK_DIR"
